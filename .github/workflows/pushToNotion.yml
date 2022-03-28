@@ -18,6 +18,6 @@ jobs:
       - name: Run git-notion
         env:
           NOTION_TOKEN_V2: ${{ secrets.NOTION_TOKEN_V2 }}
-          NOTION_ROOT_PAGE: https://www.notion.so/snowsoft/gitpush-test-8d1f28feafc644269ce9bc1e0c21a424
+          NOTION_ROOT_PAGE: https://www.notion.so/snowsoft/TopLevel-0b80a693bbf24c61be64c31a41ff2eb1
         run: |
           git-notion
