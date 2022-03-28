@@ -62,7 +62,7 @@ As a general rule we will follow a simple principle, when it comes to documentat
 1. **Grant Snowflake permissions** to Snowboard technical user.
 2. **Run background jobs** (in settings top right corner of the app, click on your name initial) for indexing existing assets (DBs, schemas, tables, columns in Snowflake) and extracting metadata (usage, freshness, size, lineage). [This can take up to 1 day depending on the size of the installation]
 
-![Scheduling background jobs.png](img/Scheduling_background_jobs.png)
+![Scheduling background jobs.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/Scheduling_background_jobs.png)
 
 **Outcome:** Congratulations your assets are now indexed and discoverable in Snowboard!
 
@@ -78,29 +78,29 @@ As a general rule we will follow a simple principle, when it comes to documentat
 
 1. **Create Tags and Properties.** Here this depend a lot of your particular needs and documentation strategy but we recommend to use tags for lifecycle management of assets (asset: “approved”, “wip”, “deprecated”), critical information (”PII data” or “issue detected”), documentation steps (”to be documented”) and if you have domains exclusive to each other. (e.g. we have data coming from many disparate sources, data for “snowboard”, demo data of a ramen dealer shop “ramen”). 
     
-    ![create tags and properties.png](img/create_tags_and_properties.png)
+    ![create tags and properties.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/create_tags_and_properties.png)
     
 
 1. **Document business terms definition.** Create 3 important business terms. (see 1. d.)
     
     
-    ![business terms.png](img/business_terms.png)
+    ![business terms.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/business_terms.png)
     
 2. **Document one workbook and the dashboards** within (related to use case). ****Document what analytical questions does this dashboard answer, and use #hashtags to reference business terms defined previously.
     
     
-    ![tableau dashboarsd documentation.png](img/tableau_dashboarsd_documentation.png)
+    ![tableau dashboarsd documentation.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/tableau_dashboarsd_documentation.png)
     
 3. **Document reporting tables** underneath use case Tableau or PowerBI dashboards. If you want to enable good self service, these are the most important tables to document first. Data consumers need to understand what is the definition of each columns. The next natural step here is to select a table where complex business logic has been applied and document the result variables. 
 
-![document reporting table.png](img/document_reporting_table.png)
+![document reporting table.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/document_reporting_table.png)
 
  
 
 1. **Document the database and schemas** (related to use case) with at least 1 sentence describing the type of data that can be found and the purpose of the object (e.g. database: “contains data related to e-commerce shop”.) and who is the owner.
     
     
-    ![document schema.png](img/document_schema.png)
+    ![document schema.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/document_schema.png)
     
     **Outcome:** Congratulations you have identified an analytical use case and documented it! 
     
@@ -112,28 +112,28 @@ As a general rule we will follow a simple principle, when it comes to documentat
 1. **Explore data with table level lineage.** 
     1. Where is the data coming from? Start on the workbook page of your BI tool. Go down to lineage. Press “Up +” button to see all tables upstream. Click on a table to jump to its catalogue page.  
         
-        ![upstream dependency of table.png](img/upstream_dependency_of_table.png)
+        ![upstream dependency of table.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/upstream_dependency_of_table.png)
         
     2. Where is this column coming from? Start on a table catalog page, take a variable in the list, click on the node icon next to a variable “completeness” and “monthly usage”. You have the column level lineage. 
         
-        ![click on node edge symbol next to variable to assess column level lineage.png](img/click_on_node_edge_symbol_next_to_variable_to_assess_column_level_lineage.png)
+        ![click on node edge symbol next to variable to assess column level lineage.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/click_on_node_edge_symbol_next_to_variable_to_assess_column_level_lineage.png)
         
     3. Which dashboard is built on this data? If I change this table which dashboard is impacted? Start from the catalog page of a table. Go to lineage. Click “Down -” to see all the downstream dependencies of a particular table. Click on a table to jump to its catalogue page. 
         
-        ![downstream dependency of tables.png](img/downstream_dependency_of_tables.png)
+        ![downstream dependency of tables.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/downstream_dependency_of_tables.png)
         
     4. How was this particular table on the lineage created? Hover an arrow between two tables and click on it. Here you have the sql that defined this table. 
         
-        ![click on arrow for sql statement behind creation of table.png](img/click_on_arrow_for_sql_statement_behind_creation_of_table.png)
+        ![click on arrow for sql statement behind creation of table.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/click_on_arrow_for_sql_statement_behind_creation_of_table.png)
         
 2. **Assess freshness of tables**
     1. Are there tables in my schema that are not fresh? Go to schema catalogue page. Sort tables by DESC last updated. Is there anything unusual? 
         
-        ![sort tables in schema by desc last updated.png](img/sort_tables_in_schema_by_desc_last_updated.png)
+        ![sort tables in schema by desc last updated.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/sort_tables_in_schema_by_desc_last_updated.png)
         
     2. When was a table last used, when was it last updated? Go a to a table catalog page. Go down to timeline. There are two toggles: “updated”, “used”.
         
-        ![timeline upadet and usage.png](img/timeline_upadet_and_usage.png)
+        ![timeline upadet and usage.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/timeline_upadet_and_usage.png)
         
 
 ## 👨‍🚀 IV. DEFINE METRICS
@@ -148,11 +148,11 @@ As a general rule we will follow a simple principle, when it comes to documentat
     7. What is the sql formula for revenue metric? 
 2. **Model a metric.** Click on new metric on the top right corner. Fill above information.
 
-![define metric.png](img/define_metric.png)
+![define metric.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/define_metric.png)
 
 1. **Consume metrics from the store.**
     
-    ![metric store consumption.png](img/metric_store_consumption.png)
+    ![metric store consumption.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/metric_store_consumption.png)
     
 
 1. **Consume metrics from Snowflake.**
@@ -162,6 +162,6 @@ As a general rule we will follow a simple principle, when it comes to documentat
 
 Click the blue “feedback” button at the down right corner of your screen. You can take screenshots to point towards what is wrong.
 
-![give feedback to the snowboard team.png](img/give_feedback_to_the_snowboard_team.png)
+![give feedback to the snowboard team.png](https://github.com/Snowboard-Software/onboardingGuide/blob/master/img/give_feedback_to_the_snowboard_team.png)
 
 # 🎉🎉   CONGRATULATIONS! THIS IS THE END OF YOUR ONBOARDING!  🎉🎉
